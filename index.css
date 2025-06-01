@@ -13,13 +13,13 @@
     from {
         opacity: 0;
         scale: 0.5;
-        transform: translateY(-100px);
+        transform: translateX(-100px);
     }
     
     to {
         opacity: 1;
         scale: 1;
-        transform: translateY(0px);
+        transform: translateX(0px);
     }
 }
 
@@ -154,17 +154,14 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 1;
     top: 0;
     left: 0;
 }
 
 .home-content {
-    max-width: 60%;
+    max-width: 90%;
     z-index: 2;
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
 }
 
 .home-content h3 {
@@ -216,7 +213,7 @@ span {
 }
 
 .social-media a {
-    font-size: 2rem;
+    font-size: 4rem;
     margin: 0 10px;
     color: var(--main-color);
     transition: 0.3s;
@@ -235,8 +232,8 @@ span {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
+    width: 6rem;
+    height: 6rem;
     background: transparent;
     border: 0.2rem solid var(--main-color);
     border-radius: 50%;
@@ -728,13 +725,17 @@ span {
         }
     }
 
-    @media (max-width: 426px) {
+    @media (max-width: 440px) {
         .home-content {
             display: flex;
             flex-direction: column;
         }
 
         .home-content h3 {
+            text-align: left;
+        }
+        
+        .social-media, .button{
             text-align: left;
         }
 

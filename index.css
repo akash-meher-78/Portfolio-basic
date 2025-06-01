@@ -9,6 +9,20 @@
     scroll-behavior: smooth;
 }
 
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+        transform: translateY(-100px);
+    }
+    
+    to {
+        opacity: 1;
+        scale: 1;
+        transform: translateY(0px);
+    }
+}
+
 :root {
     --bg-color: #001;
     --second-bg-color: #112;
@@ -53,6 +67,7 @@ header {
     cursor: pointer;
     text-align: center;
     background: -webkit-linear-gradient(#16ff00, #ffed00);
+    /* background: -webkit-linear-gradient(#16c000, #b2ff59); */
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -147,6 +162,9 @@ header {
 .home-content {
     max-width: 60%;
     z-index: 2;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .home-content h3 {
@@ -271,6 +289,9 @@ span {
     border: 3px solid var(--main-color);
     border-radius: 51% 49% 48% 52% / 49% 49% 51% 51%;
     position: relative;
+     animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .heading {
@@ -280,6 +301,9 @@ span {
 
 .about-content {
     padding: 0 4rem;
+     animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .about-content h2 {
@@ -306,13 +330,14 @@ span {
 
 .skills .heading {
     font-size: rem;
+    margin-top: 5rem;
     margin-bottom: 3rem;
     color: var(--text-color);
 }
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     max-width: 1200px;
     margin: auto;
@@ -325,6 +350,9 @@ span {
     box-shadow: 0 8px 20px rgba(0, 255, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     color: var(--text-color);
+    animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .skill-box:hover {
@@ -365,8 +393,8 @@ span {
     color: #659AD2;
 }
 
-.skill-box .bx{
-     color: #3b82f6;
+.skill-box .bx {
+    color: #3b82f6;
 }
 
 .skill-box h3 {
@@ -424,6 +452,9 @@ span {
     align-items: center;
     gap: 2.3rem;
     margin-top: 4.2rem;
+    animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .row {
@@ -535,8 +566,16 @@ span {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
+.contact form textarea{
+    animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
 .contact form .input-box input,
 .contact form textarea {
     width: 100%;
@@ -564,6 +603,7 @@ span {
     bottom: 0;
     width: 100%;
     background: var(--second-bg-color);
+    
 }
 
 .footer .social {
@@ -593,9 +633,8 @@ span {
 }
 
 .footer .copyright {
-    margin-top: 20px;
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
     color: var(--text-color);
 }
 
@@ -690,21 +729,23 @@ span {
     }
 
     @media (max-width: 426px) {
-        .home-content{
+        .home-content {
             display: flex;
             flex-direction: column;
         }
-        .home-content h3{
+
+        .home-content h3 {
             text-align: left;
         }
 
-        .home-content h1{
+        .home-content h1 {
             text-align: left;
         }
 
-        .home-content p{
+        .home-content p {
             text-align: left;
         }
+
         .heading {
             font-size: 5rem;
             text-align: center;

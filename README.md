@@ -18,8 +18,3 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 🎯 Modern fonts like Space Grotesk / Poppins
 
 🧭 Smooth navigation across sections
-<<<<<<< HEAD
-
-🧰 Sections: Home, About, Skills, Projects, Contact
-=======
->>>>>>> 0b3b7e84745c70c3fee5d3928ecd72efb29d2866

@@ -20,16 +20,3 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 🧭 Smooth navigation across sections
 
 🧰 Sections: Home, About, Skills, Projects, Contact
-
-
-## 📁 Project Structure
-
-```bash
-portfolio/
-├── index.html         # Main HTML file
-├── style.css          # All styling for layout and responsiveness
-├── script.js          # JS for interactivity (e.g., navigation, scroll)
-├── particles.js       # Particles.js library
-├── images        # Profile picture, etc.
-├── Project-imf   # project thumbnails,
-└── README.md          # This file

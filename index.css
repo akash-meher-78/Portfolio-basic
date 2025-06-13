@@ -526,7 +526,6 @@ span {
 
 .logo-icon1 {
     font-size: 1.5rem;
-    padding: 0.7rem;
     border: 1px solid transparent;
     border-radius: 28px;
     cursor: pointer;
@@ -534,7 +533,6 @@ span {
 
 .logo-icon2 {
     font-size: 1.5rem;
-    padding: 0.7rem;
     border: 1px solid transparent;
     border-radius: 28px;
     cursor: pointer;
@@ -542,14 +540,16 @@ span {
 
 .logo-icon3 {
     font-size: 1.5rem;
-    padding: 0.7rem;
     border: 1px solid transparent;
     border-radius: 28px;
     cursor: pointer;
 }
 
 #a-link {
-    color: #16ff00;
+    color: var(--main-color);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background-color: var(--second-bg-color);
 }
 
 .row:hover {

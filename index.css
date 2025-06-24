@@ -67,7 +67,6 @@ header {
     cursor: pointer;
     text-align: center;
     background: -webkit-linear-gradient(#16ff00, #ffed00);
-    /* background: -webkit-linear-gradient(#16c000, #b2ff59); */
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -184,22 +183,6 @@ span {
     background: -webkit-linear-gradient(#16ff00, #ffed00);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-@property --angle {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-}
-
-@keyframes spin {
-    form {
-        --angle: 0deg;
-    }
-
-    to {
-        --angle: 360deg;
-    }
 }
 
 
@@ -440,16 +423,6 @@ span {
     }
 }
 
-/* Scrollbar Design */
-
-::-webkit-scrollbar {
-    width: 15px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--main-color);
-    width: 50px;
-}
 
 .portfolio {
     background: var(--second-bg-color);
@@ -483,7 +456,7 @@ span {
     height: auto;
     width: 100%;
     margin-bottom: 1.4rem;
-    border-radius: 28px;
+    border-radius: 15px;
 }
 
 .main-row {
@@ -617,6 +590,7 @@ span {
     bottom: 0;
     width: 100%;
     background: var(--second-bg-color);
+    font-family: 'Courier New', Courier, monospace;
 
 }
 
